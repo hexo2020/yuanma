@@ -56,11 +56,15 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: |
           npm install
-
-
-
+          
+      - name: 安装gulp插件
+        run: |
+          npm install --global gulp-cli
+          npm install workbox-build gulp --save-dev
+          
+          
       - name: 部署博客
         run: |
           rm -rf .deploy_git
-          hexo g && hexo douban && hexo deploy
+          hexo g && gulp && hexo douban && hexo deploy
           rm ~/.ssh/id_rsa
