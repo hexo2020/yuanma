@@ -11,13 +11,13 @@ menu:
   时间轴: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
-  清单||fa fa-heartbeat:
-    - 音乐 || /music/ || fa fa-music
-    - 照片 || /Gallery/ || fa fa-picture-o
-    - 电影 || /movies/ || fa fa-film
-  友链: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
-  留言板: /messageboard/ || fa fa-link
+  #清单||fa fa-heartbeat:
+  #  - 音乐 || /music/ || fa fa-music
+  #  - 照片 || /Gallery/ || fa fa-picture-o
+  #  - 电影 || /movies/ || fa fa-film
+  #友链: /link/ || fa fa-link
+  #关于: /about/ || fa fa-heart
+  #留言板: /messageboard/ || fa fa-link
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
@@ -103,7 +103,7 @@ favicon: /img/favicon.png
 # Avatar (頭像)
 avatar:
   img: https://cdn.jsdelivr.net/gh/hexo2020/CDN@IMG/touxiang.jpg 
-  effect: true
+  effect: false
 
 # the banner image of home page
 index_img: https://cdn.jsdelivr.net/gh/hexo2020/CDN@master/IMG/timg.jpeg
@@ -141,7 +141,8 @@ cover:
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
       - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png 
-      - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg3.png
+      - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg2.png 
+      - https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg3.png
 
 
 
@@ -794,13 +795,13 @@ lazyload:
 # PWA
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
-pwa:
-   enable: true
-   manifest: /image/pwa/manifest.json
-   apple_touch_icon: /image/pwa/apple-touch-icon.png
-   favicon_32_32: /image/pwa/32.png
-   favicon_16_16: /image/pwa/16.png
-   mask_icon: /image/pwa/safari-pinned-tab.svg
+#pwa:
+   #enable: true
+   #manifest: /image/pwa/manifest.json
+   #apple_touch_icon: /image/pwa/apple-touch-icon.png
+   #favicon_32_32: /image/pwa/32.png
+   #favicon_16_16: /image/pwa/16.png
+   #mask_icon: /image/pwa/safari-pinned-tab.svg
 
 # Disable Baidu transformation on mobile devices (禁止百度轉碼)
 disable_baidu_transformation: true
