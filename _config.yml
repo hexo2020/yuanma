@@ -8,13 +8,13 @@ subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh-Hans
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://565740950.github.io/blog
-root: /blog/
+url: https://v.zhengapple.cn
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,5 +104,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:565740950/blog.git
-  branch: master
+  repo: git@github.com:hexo2020/yuanma.git
+  branch: hexo
