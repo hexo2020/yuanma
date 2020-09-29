@@ -1,0 +1,48 @@
+{
+    "name": "string", //應用全稱
+    "short_name": "Junzhou", //應用簡稱
+    "theme_color": "#49b1f5", //匹配瀏覽器的地址欄顏色
+    "background_color": "#49b1f5",//加載應用時的背景色
+    "display": "standalone",//首選顯示模式 其他選項有：fullscreen,minimal-ui,browser
+    "scope": "/",
+    "start_url": "/",
+    "icons": [ //該數組指定icons圖標參數，用來時適配不同設備（需為png，至少包含一個192px*192px的圖標）
+        {
+          "src": "images/pwaicons/36.png", //圖標文件的目錄，需在source/目錄下自行創建。
+          "sizes": "36x36",
+          "type": "image/png"
+        },
+        {
+            "src": "images/pwaicons/48.png",
+          "sizes": "48x48",
+          "type": "image/png"
+        },
+        {
+          "src": "images/pwaicons/72.png",
+          "sizes": "72x72",
+          "type": "image/png"
+        },
+        {
+          "src": "images/pwaicons/96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        },
+        {
+          "src": "images/pwaicons/144.png",
+          "sizes": "144x144",
+          "type": "image/png"
+        },
+        {
+          "src": "images/pwaicons/192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+            "src": "images/pwaicons/512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+      ],
+      "splash_pages": null //配置自定義啟動動畫。
+  }
+
