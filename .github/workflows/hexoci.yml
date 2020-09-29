@@ -57,10 +57,10 @@ jobs:
         run: |
           npm install
           
-      - name: 安装gulp插件
-        run: |
-          npm install --global gulp-cli
-          npm install workbox-build gulp --save-dev
+      # - name: 安装gulp插件
+      #   run: |
+      #     npm install --global gulp-cli
+      #     npm install workbox-build gulp --save-dev
           
           
       - name: 部署博客
