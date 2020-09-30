@@ -8,7 +8,7 @@
 
 menu:
   首页: / || fa fa-home
-  时间轴: /archives/ || fa fa-archive
+  文章: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
   #清单||fa fa-heartbeat:
@@ -265,7 +265,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   count: false # Display comment count in top_img
 
 # disqus
