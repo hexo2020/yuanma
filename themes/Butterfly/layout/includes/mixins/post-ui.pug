@@ -1,6 +1,7 @@
 mixin postUI(posts)
   each article , index in page.posts.data
-    .recent-post-item
+    if article.hide !== true
+     .recent-post-item
       - let link = article.link || article.path
       - let title = article.title || _p('no_title')
       - let leftOrRight = index%2 == 0 ? 'left_radius' : 'right_radius'
@@ -73,6 +74,6 @@ mixin postUI(posts)
           - content.length > theme.index_post_content.length ? expert += ' ...' : ''
           .content!= expert
 
-    if theme.ad && theme.ad.index
+     if theme.ad && theme.ad.index
       if (index + 1) % 3 == 0
         .recent-post-item.ad_height!=theme.ad.index
