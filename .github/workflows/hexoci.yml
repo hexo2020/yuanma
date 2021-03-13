@@ -35,8 +35,9 @@ jobs:
           npm i -g hexo-cli
           npm i
 
-      #- name: 安装插件
-      #  run: |
+      - name: 安装插件
+        run: |
+           npm install hexo-generator-restful --save
       #    npm install hexo-renderer-pug --save
       #    npm install hexo-renderer-stylus --save
       #    npm install hexo-deployer-git --save
@@ -45,6 +46,7 @@ jobs:
       #   npm install hexo-generator-feed --save
       #    npm install hexo-abbrlink --save
       #    npm install hexo-wordcount --save
+         
       - name: 緩存
         uses: actions/cache@v1
         id: cache-dependencies
